@@ -17,9 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private float _dashingDuration = 0.2f;
     private float _dashingCooldown = 4f;
 
-    //bool dash = false;
-
-    // Start is called before the first frame update
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -29,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(!_isDashing)

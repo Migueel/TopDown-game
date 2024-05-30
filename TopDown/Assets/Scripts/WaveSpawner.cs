@@ -8,7 +8,6 @@ public class WaveSpawner : MonoBehaviour
     private Transform _spawnLocation;
     [SerializeField]
     private List<Enemy> _enemyList = new List<Enemy>();
-    [SerializeField]
     private List<GameObject> _enemiesToSpawn = new List<GameObject>();
     private int _currentWave = 1;
     private int _waveValue;
@@ -31,7 +30,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if (_enemiesToSpawn.Count > 0)
             {
-                GameObject enemy = Instantiate(_enemiesToSpawn[0], _spawnLocation.position, Quaternion.identity);
+                Instantiate(_enemiesToSpawn[0], _spawnLocation.position, Quaternion.identity);
                 _enemiesToSpawn.RemoveAt(0);
                 _spawnTimer = _spawnInterval;
 

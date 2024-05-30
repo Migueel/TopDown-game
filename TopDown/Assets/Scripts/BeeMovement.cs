@@ -10,7 +10,7 @@ public class Bee_movement : MonoBehaviour
     private Animator _animator;
     private Vector2 _movement;
     private float _moveSpeed;
-    private float _flySpeed = 1f;
+    private float _flySpeed = 0.8f;
     private float _angleToPlayer;
     private Vector3 _directionToPlayer;
     private bool _isAttacking;
